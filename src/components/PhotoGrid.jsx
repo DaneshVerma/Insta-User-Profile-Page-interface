@@ -29,7 +29,7 @@ const PhotoGrid = ({ data, onPhotoClick }) => {
           />
           
           {/* Overlay on hover */}
-          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-200 flex items-center justify-center">
+          <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-200 flex items-center justify-center">
             <div className="opacity-0 group-hover:opacity-100 flex items-center gap-4 text-white font-semibold">
               {item.type === 'reel' ? (
                 <>

@@ -38,7 +38,7 @@ const TabNavigation = ({ activeTab, onTabChange }) => {
           <button
             key={tab.id}
             onClick={() => onTabChange(tab.id)}
-            className={`flex items-center gap-1 px-8 py-3 text-xs font-semibold tracking-wide transition-colors ${
+            className={`flex cursor-pointer items-center gap-1 px-8 py-3 text-xs font-semibold tracking-wide transition-colors ${
               activeTab === tab.id
                 ? 'text-black border-t-2 border-black -mt-px'
                 : 'text-gray-400 hover:text-gray-600'

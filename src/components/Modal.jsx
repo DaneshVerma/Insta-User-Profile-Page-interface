@@ -49,12 +49,12 @@ const Modal = ({ isOpen, onClose, photo }) => {
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face"
+                      src="https://imgs.search.brave.com/sJV0i-SxttDA62Z8KRWkvJ4bR2mDMm58oNyRxyzzZuQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNmL2Jh/LzZlLzNmYmE2ZTk3/ODRiMjJlMWQ2OTEw/YWZmZjc2OTdmMjY1/LmpwZw"
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <span className="font-semibold text-sm">johndoe</span>
+                  <span className="font-semibold text-sm">thedanesh7</span>
                 </div>
               </div>
               
