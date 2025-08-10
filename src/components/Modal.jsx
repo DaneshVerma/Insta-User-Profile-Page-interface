@@ -24,8 +24,8 @@ const Modal = ({ isOpen, onClose, photo }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       {/* Backdrop */}
-      <div 
-        className="absolute inset-0 bg-black bg-opacity-75"
+      <div
+        className="absolute inset-0 bg-opacity-75"
         onClick={onClose}
       />
       
@@ -91,7 +91,7 @@ const Modal = ({ isOpen, onClose, photo }) => {
               </div>
               
               {/* Actions */}
-              <div className="p-4 flex items-center gap-4">
+              <div className="p-4 flex  items-center gap-4">
                 <button className="hover:text-gray-600 transition-colors">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -115,7 +115,7 @@ const Modal = ({ isOpen, onClose, photo }) => {
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+          className="absolute top-4 right-4 text-black hover:text-gray-800 cursor-pointer transition-colors"
         >
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

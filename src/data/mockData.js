@@ -44,7 +44,7 @@ export const postsData = [
   {
     id: 1,
     type: "post",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop",
+    image: "https://instagram.fbho4-3.fna.fbcdn.net/v/t51.2885-19/416748217_901853628313238_1712827453561104369_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fbho4-3.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2QGWqEbjPawTNJtETQ9r5IakpGxsIGmhG_J_6jISWGZ_GNHSMNlZV3SJBGjihjn_Z_tfYnR3U-6zuC2ur9n0eq30&_nc_ohc=CBj3id_8iwoQ7kNvwHcSOY-&_nc_gid=zaTSSCS4ZRQPYD3kTkNLbA&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfW0AIPFxgsWY6MFc7eyytjfq76-hV1Cf7W6Sdkzau9Vug&oe=689EACB1&_nc_sid=7a9f4b",
     likes: 1234,
     comments: 56
   },
