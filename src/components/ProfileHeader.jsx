@@ -63,7 +63,7 @@ const ProfileHeader = ({ profileData }) => {
           <div className="font-semibold text-sm">{profileData.displayName}</div>
           <div className="text-sm whitespace-pre-line">{profileData.bio}</div>
           {profileData.website && (
-            <a href={`https://${profileData.website}`} className="text-blue-900 text-sm hover:underline">
+            <a href="https://daneshverma.onrender.com/" target='_blank' className="text-blue-900 text-sm hover:underline">
               {profileData.website}
             </a>
           )}
