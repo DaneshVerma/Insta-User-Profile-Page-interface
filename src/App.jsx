@@ -1,15 +1,20 @@
-
-import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
-import ProfileHeader from './components/ProfileHeader';
-import HighlightStories from './components/HighlightStories';
-import TabNavigation from './components/TabNavigation';
-import PhotoGrid from './components/PhotoGrid';
-import Modal from './components/Modal';
-import { profileData, highlightStories, postsData, reelsData, taggedData } from './data/mockData';
+import React, { useState } from "react";
+import Sidebar from "./components/Sidebar";
+import ProfileHeader from "./components/ProfileHeader";
+import HighlightStories from "./components/HighlightStories";
+import TabNavigation from "./components/TabNavigation";
+import PhotoGrid from "./components/PhotoGrid";
+import Modal from "./components/Modal";
+import {
+  profileData,
+  highlightStories,
+  postsData,
+  reelsData,
+  taggedData,
+} from "./data/mockData";
 
 function App() {
-  const [activeTab, setActiveTab] = useState('posts');
+  const [activeTab, setActiveTab] = useState("posts");
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -29,9 +34,9 @@ function App() {
 
   const getCurrentData = () => {
     switch (activeTab) {
-      case 'reels':
+      case "reels":
         return reelsData;
-      case 'tagged':
+      case "tagged":
         return taggedData;
       default:
         return postsData;
@@ -39,37 +44,42 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className='min-h-screen bg-white'>
       {/* Sidebar */}
       <Sidebar />
-      
+
       {/* Main Content */}
-      <div className="lg:ml-64">
+      <div className='lg:ml-64'>
         {/* Profile Header */}
         <ProfileHeader profileData={profileData} />
-        
+
         {/* Highlight Stories */}
-        <div className="py-4 border-b border-gray-200">
+        <div className='py-4 border-b border-gray-200'>
           <HighlightStories stories={highlightStories} />
         </div>
-        
+
         {/* Tab Navigation */}
         <TabNavigation activeTab={activeTab} onTabChange={handleTabChange} />
-        
+
         {/* Photo Grid */}
-        <div className="py-4">
+        <div className='py-4'>
           <PhotoGrid data={getCurrentData()} onPhotoClick={handlePhotoClick} />
         </div>
+        <footer className='text-gray-600 font-semibold'>
+          <p className='text-center'>
+            &copy; [<i>Danesh</i>]
+          </p>
+        </footer>
       </div>
-      
+
       {/* Modal */}
-      <Modal 
-        isOpen={isModalOpen} 
-        onClose={handleCloseModal} 
-        photo={selectedPhoto} 
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        photo={selectedPhoto}
       />
     </div>
   );
 }
 
-export default App
+export default App;
