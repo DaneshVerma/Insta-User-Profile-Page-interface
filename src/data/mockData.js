@@ -6,9 +6,9 @@ export const profileData = {
   profileImage: "https://imgs.search.brave.com/sJV0i-SxttDA62Z8KRWkvJ4bR2mDMm58oNyRxyzzZuQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNmL2Jh/LzZlLzNmYmE2ZTk3/ODRiMjJlMWQ2OTEw/YWZmZjc2OTdmMjY1/LmpwZw",
   isVerified: true,
   isPrivate: false,
-  posts: 127,
-  followers: "2.5k",
-  following: 892,
+  posts: 9,
+  followers: "428",
+  following: 47,
   website: "www.daneshverma.onrender.com",
 };
 
